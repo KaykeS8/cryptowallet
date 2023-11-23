@@ -1,0 +1,22 @@
+pt-BR:
+  links: 
+    edit: "Editar"
+    show: 'Mostrar'
+    delete: 'Apagar'
+    new: "Nova"
+    back: "Voltar"
+  actual-locale: "Português do brasil"
+
+  new: 
+    coin: 'Nova moeda'
+    mining_type: 'Novo tipo de mineração'
+
+  edit:
+    title_coin: "Editar Moeda"
+    title_mining_type: 'Editar o tipo de mineração'
+
+  messages:
+    welcome: 'Seja bem vindo'
+    welcome_message: "Este é o CrypoWallet, um app para você cadastrar e acompanhar as suas criptomoedas."
+    menu: "Para começar, selecione umas das opções abaixo:"
+    confirm: "Tem certeza que deseja excluir"

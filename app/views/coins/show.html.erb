@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<form class="form-group">
+  <div class="mb-3" style="width: 400px;">
+    <%= label_tag nil, @coin.class.human_attribute_name(:description), class: 'form-label'%>
+    <%= text_field_tag nil, @coin.description, class: 'form-control', disabled:true%>
+  </div>
+
+  <div class="mb-3" style="width: 400px;">
+    <%= label_tag nil, @coin.class.human_attribute_name(:acronym), class: 'form-label'%>
+    <%= text_field_tag nil, @coin.acronym, class: 'form-control', disabled: true%>
+  </div>
+
+  <div class="mb-3" style="width: 400px;">
+    <%= label_tag nil,  @coin.class.human_attribute_name(:url_image), class: 'form-label'%>
+    <%= text_field_tag nil,  @coin.url_image, class: 'form-control', disabled: true%>
+  </div>
+
+  <div class="mb-3" style="width: 400px;">
+    <%= label_tag nil,  @coin.mining_type.class.human_attribute_name(:description), class: 'form-label'%>
+    <%= text_field_tag nil,  @coin.mining_type.description, class: 'form-control', disabled: true%>
+  </div>
+
+  <div class="mb-3" style="width: 400px;">
+    <strong>Logo:</strong>
+    <%= image_tag @coin.url_image, size: "24x24"%>
+  </div>
+ 
+</form>
+
+<%= link_to t("links.edit"), edit_coin_path(@coin), class: "btn btn-primary" %> |
+<%= link_to t("links.back"), coins_path, class: "btn btn-secondary" %>
